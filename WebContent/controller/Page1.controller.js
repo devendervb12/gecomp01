@@ -1,4 +1,4 @@
-sap.ui.controller("view.Page1", {
+sap.ui.controller("ge.in.controller.Page1", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -34,5 +34,27 @@ sap.ui.controller("view.Page1", {
 //	onExit: function() {
 //
 //	}
+	
+	onPress : function(){
+		var oComp = this.getOwnerComponent();
+		var oRouter = oComp.getRouter(this);
+		oRouter.navTo("pageInital2");
+	}	
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

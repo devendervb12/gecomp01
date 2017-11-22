@@ -11,7 +11,7 @@ sap.ui.core.UIComponent.extend("ge.in.Component", {
 			},
 			routes : [
 				{
-					pattern : "",
+					pattern : "", //when
 					name : "pageInital",
 					viewName : "ge.in.view.Page1",
 					viewType : "XML",
@@ -19,9 +19,17 @@ sap.ui.core.UIComponent.extend("ge.in.Component", {
 					controlAggregation : "pages"
 				},
 				{
-					pattern : "page2",
+					pattern : "page2", //when
 					name : "pageInital2",
 					viewName : "ge.in.view.Page2",
+					viewType : "XML",
+					controlId : "idApp",
+					controlAggregation : "pages"
+				},
+				{
+					pattern : "page3", //when
+					name : "pageInital3",
+					viewName : "ge.in.view.Page3",
 					viewType : "XML",
 					controlId : "idApp",
 					controlAggregation : "pages"
